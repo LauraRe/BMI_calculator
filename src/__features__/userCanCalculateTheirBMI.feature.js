@@ -7,13 +7,12 @@ describe('BMI Converter', () => {
         await page.reload();
     });
 
-    it('should display "BMI Converter" text on page', async () => {
+    it('should display BMI Converter text on page', async () => {
         await expect(page).toMatch('BMI Converter');
     });
 
     describe('Metric method', async () => {
         beforeEach( async () => {
-            // This before block will be executed prior to each test in this describe block
             await page.select('select[id="method"]', 'metric')
             await page.type('input[name="weight"]', '95')
             await page.type('input[name="height"]', '186')

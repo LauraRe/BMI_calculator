@@ -3,10 +3,11 @@ import { bmiCalculation } from '../Modules/BMICalculator';
 
 class DisplayResult extends Component {
     calculate() {
-        var weight= this.props.weight;
-        var height= this.props.height;
-
-        return bmiCalculation(weight, height);
+        let weight = this.props.weight;
+        let height = this.props.height;
+        let method = this.props.method;
+        
+        return bmiCalculation(weight, height, method);
     }
 
     render() {
