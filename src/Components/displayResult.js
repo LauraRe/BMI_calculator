@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { bmiCalculation } from '../Modules/BMICalculator';
+import { Message, Segment } from 'semantic-ui-react'
 
 class DisplayResult extends Component {
     calculate() {
