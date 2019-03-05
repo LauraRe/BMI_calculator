@@ -7,7 +7,7 @@ describe('BMI Converter', () => {
         await page.reload();
     });
 
-    it('should display BMI Converter text on page', async () => {
+    it('should display "BMI Converter" text on page', async () => {
         await expect(page).toMatch('BMI Converter');
     });
 
