@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DisplayResult from './Components/displayResult';
-import { Container, Form, Grid, Header } from 'semantic-ui-react'
+import { Container, Input, Grid, Header, Select } from 'semantic-ui-react'
 
 class App extends Component {
   constructor(props) {
@@ -49,12 +49,12 @@ class App extends Component {
 
               <div>
                 <label>{this.state.weightLabel}</label>
-                <input name="weight" value={this.state.weight} onChange={(e) => { this.setState({ weight: e.target.value }) }} />
+                <Input name="weight" value={this.state.weight} onChange={(e) => { this.setState({ weight: e.target.value }) }} />
               </div>
 
               <div>
                 <label>{this.state.heightLabel}</label>
-                <input name="height" value={this.state.height} onChange={(e) => this.setState({ height: e.target.value })} />
+                <Input name="height" value={this.state.height} onChange={(e) => this.setState({ height: e.target.value })} />
               </div>
 
               <DisplayResult
